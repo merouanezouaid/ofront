@@ -5,7 +5,13 @@ const nextConfig = {
       return [
         {
           source: '/socket.io/:path*',
-          destination: 'https://localhost:8000/socket.io/:path*',
+          destination: 'http://64.227.124.78/socket.io/:path*',
+          headers: [
+            { key: "Access-Control-Allow-Credentials", value: "true" },
+            { key: "Access-Control-Allow-Origin", value: "*" },
+            { key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+            { key: "Access-Control-Allow-Headers", value: "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" },
+          ]
         },
       ];
     },

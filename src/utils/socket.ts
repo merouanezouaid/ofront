@@ -12,7 +12,7 @@ const strangerVideoElement: HTMLVideoElement | null = null;
 export function initializeSocket(onQuestion: (q: string) => void, onLoading: (loading: boolean) => void, onMessage: (sender: string, text: string) => void, myVideoRef: HTMLVideoElement,
 strangerVideoRef: HTMLVideoElement) {
   if (!socket) {
-    socket = io('https://localhost:8000');
+    socket = io('http://64.227.124.78');
 
     socket.on('disconnected', () => {
       window.location.href = '/?disconnect';
