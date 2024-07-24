@@ -18,7 +18,7 @@ const nextConfig = {
       return [
         {
           source: '/socket.io/:path*',
-          destination: 'http://64.227.124.78/socket.io/:path*',
+          destination: 'http://https://oback.vercel.app/socket.io/:path*',
         },
       ];
     },

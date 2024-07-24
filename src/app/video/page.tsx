@@ -50,8 +50,8 @@ export default function Video() {
       )}
       <div className="col-span-3 p-8 lg:p-15">
       <div className="relative w-full h-[calc(100vh-4rem)]">
-      <video ref={strangerVideoRef} autoPlay playsInline className="w-full h-full object-cover bg-black rounded-3xl" />
-      <video ref={myVideoRef} autoPlay muted playsInline className="absolute bottom-5 right-5 w-72 h-72 lg:w-[300px] lg:h-[300px] rounded-full object-cover bg-purple-100 outline outline-2 outline-violet-300" />
+      {/* <video ref={strangerVideoRef} autoPlay playsInline className="w-full h-full object-cover bg-black rounded-3xl" />
+      <video ref={myVideoRef} autoPlay muted playsInline className="absolute bottom-5 right-5 w-72 h-72 lg:w-[300px] lg:h-[300px] rounded-full object-cover bg-purple-100 outline outline-2 outline-violet-300" /> */}
     </div>
       </div>
       <div className="col-span-1 p-8 h-screen overflow-auto border-l-2 border-light-blue-200">
